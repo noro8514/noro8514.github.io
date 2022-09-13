@@ -38,6 +38,8 @@ body {
     border-radius: 0 0 1.5em 1.5em;
     height: 30px;
     padding: 10px;
+    font-size:15px;
+    line-height:25px;
   }
   
   .card article img
@@ -49,9 +51,17 @@ body {
   h2, p{
     margin:0;
   }
+  h2{
+    font-size:20px;
+    line-height:25px;
+  }
 
   article{
     height: 120px;
     background-color:rgba(0,0,0,.5);  
     color:#fff;
+  }
+
+  article p {
+    padding: 10px;
   }
