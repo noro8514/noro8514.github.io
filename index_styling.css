@@ -1,10 +1,13 @@
-*{
-    font-family:'Courier New', Courier, monospace;
+h1, h2, h3, h4, h5, h6, .buttonTestDefault,.buttonTestHover,.buttonTestVisited,.linkDefault,.linkOther{
+    font-family: 'Courier New', Courier, monospace;
+}
+ul, ol, p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 h1{
     color:#233740;
-    border-bottom: solid #80A2AB;
-    text-align: center;
+    border-bottom: solid thick #80A2AB;
+    text-align:center;
 }
 h2{
     color:#4D5E66;
@@ -16,7 +19,7 @@ h4, h5, h6{
     color:#B2DDDA;
 }
 body{
-    background-color: grey;
+    background-color: rgb(117, 115, 115);
 }
 a:link{
     color:#233740;
@@ -25,18 +28,92 @@ a:hover, a:visited{
     color:#CFE569;
 }
 button{
-    color:#233740;
+    color:#B2DDDA;
+    border: solid thin black;
+    background-color:#233740;
 }
 button:hover{
     color:#80A2AB;
 }
+button:visited{
+    color:#CFE569;
+    background-color:#4D5E66;
+}
 ul, ol{
     color:#B2DDDA;
+    font-size: 14pt;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 p{
     color:#B2DDDA;
+    font-size:14pt;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 img{
-    width:200px;
+    width:150px;
+    height:auto;
+}
+.wrapper{
+    display:flex;
+}
+.box{
+    width:20px;
+    height:20px;
+    border:1px solid;
+}
+.baseColor{
+    background: #233740;
+}
+.secondaryColor{
+    background: #4D5E66;
+}
+.tertiaryColor{
+    background: #80A2AB;
+}
+.fourthColor{
+    background: #B2DDDA;
+}
+.fifthColor{
+    background: #CFE569;
+}
+.buttonTestDefault{
+    width:100px;
+    height:40px;
+    color: #B2DDDA;
+    background-color: #233740;
+    text-align:center;
+    display:inline-block;
+}
+.buttonTestHover{
+    width:100px;
+    height:40px;
+    color:#80A2AB;
+    background-color: #233740;
+    text-align:center;
+    display:inline-block;
+}
+.buttonTestVisited{
+    width:100px;
+    height:40px;
+    color: #CFE569;
+    background-color: #4D5E66;
+    text-align:center;
+    display:inline-block;
+}
+.linkDefault{
+    display:inline-block;
+    color:#233740;
+    text-decoration:underline
+}
+.linkOther{
+    display:inline-block;
+    color:#CFE569;
+    text-decoration: underline;
+}
+.listFont{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+img{
+    width:100px;
     height:auto;
 }
