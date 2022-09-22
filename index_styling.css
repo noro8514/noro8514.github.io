@@ -1,0 +1,38 @@
+*{
+    font-family:'Courier New', Courier, monospace;
+}
+h1{
+    color:#233740;
+    border-bottom: solid #80A2AB;
+    text-align: center;
+}
+h2{
+    color:#4D5E66;
+}
+h3{
+    color:#80A2AB;
+}
+h4, h5, h6{
+    color:#B2DDDA;
+}
+body{
+    background-color: grey;
+}
+a:link{
+    color:#233740;
+}
+a:hover, a:visited{
+    color:#CFE569;
+}
+button{
+    color:#233740;
+}
+button:hover{
+    color:#80A2AB;
+}
+ul, ol{
+    color:#B2DDDA;
+}
+p{
+    color:#B2DDDA;
+}
