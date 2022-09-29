@@ -7,7 +7,7 @@ ul, ol, p{
 h1{
     color:#233740;
     border-bottom: solid thick #80A2AB;
-    text-align:center;
+    text-align:left;
 }
 h2{
     color:#80A2AB;
@@ -91,6 +91,7 @@ nav{
     position:-webkit-sticky;
     position:sticky;
     top:0;
+    margin:-10px;
 }
 nav>ul{
     display:flex;
@@ -106,4 +107,13 @@ nav>ul{
     grid-template-columns: 3fr 1fr;
     gap:20px;
     margin:0 auto;
+    padding: 0 20px;
+    max-width: 980px;
+}
+
+@media only screen and (max-width: 600px){
+    h1, h2, p{
+        text-align: center;
+    }
+    
 }
