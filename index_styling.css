@@ -110,10 +110,24 @@ nav>ul{
     padding: 0 20px;
     max-width: 980px;
 }
+h3>a:link{
+    text-decoration: underline;
+}
 
 @media only screen and (max-width: 600px){
-    h1, h2, p{
+    h1{
         text-align: center;
     }
-    
+    h2{
+        color:#4D5E66;
+    }
+    body{
+        background-color: #B2DDDA;
+    }
+    p{
+        color:#80A2AB;
+    }
+    h3>a:link, h3>a:visited{
+        color:#4D5E66;
+    }
 }
