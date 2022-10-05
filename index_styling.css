@@ -100,7 +100,6 @@ nav>ul{
 }
 .feature{
     float:right;
-
 }
 .grid{
     display:grid;
@@ -113,6 +112,41 @@ nav>ul{
 h3>a:link{
     text-decoration: underline;
 }
+.pageTitle{
+    text-align: center;
+    border: solid thick #233740;
+}
+.bodyList{
+    background-color:#233740;
+    margin: 0 45% 0 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.listFlex{
+    float:left;
+    border: solid thin #233740;
+}
+.grid2{
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    gap:20px;
+    margin:0 auto;
+    padding: 0 20px;
+    border: solid thin #233740;
+}
+.leftContent{
+    text-align: center;
+    vertical-align: middle;
+}
+.wikiFeature{
+    float:right; 
+    width:200px;
+    height:auto;
+}
+.bodyList>li>a, .bodyList>li>ul>li>a{
+    text-decoration: underline;
+}
+
 
 @media only screen and (max-width: 600px){
     h1{
@@ -129,5 +163,11 @@ h3>a:link{
     }
     h3>a:link, h3>a:visited{
         color:#4D5E66;
+    }
+    .bodyList{
+        background-color:#233740;
+        margin-right: 50px;
+        padding-bottom: 10px;
+        padding-top: 10px;
     }
 }
