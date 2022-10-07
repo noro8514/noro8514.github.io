@@ -149,7 +149,7 @@ h3>a:link{
     text-decoration: underline;
 }
 .giraffeFeature{
-    align-content: center;
+    text-align: center;
 }
 
 
@@ -178,5 +178,9 @@ h3>a:link{
     img{
         width:100px;
         height:auto;
+    }
+    .bodyList{
+        text-align: center;
+        margin: 10% 10% 10% 10%
     }
 }
