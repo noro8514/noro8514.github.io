@@ -176,7 +176,8 @@ h3>a:link{
         width:100px;
         height:auto;
     }
-    .grid{
+    .grid>aside{
         display:flex;
+        float:right;
     }
 }
