@@ -176,4 +176,7 @@ h3>a:link{
         width:100px;
         height:auto;
     }
+    .grid{
+        display:inline;
+    }
 }
