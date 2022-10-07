@@ -148,6 +148,9 @@ h3>a:link{
 .bodyList>li>a, .bodyList>li>ul>li>a{
     text-decoration: underline;
 }
+.giraffeFeature{
+    align-items: center;
+}
 
 
 @media only screen and (max-width: 600px){
@@ -175,9 +178,5 @@ h3>a:link{
     img{
         width:100px;
         height:auto;
-    }
-    .grid>aside{
-        display:flex;
-        float:right;
     }
 }
