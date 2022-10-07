@@ -99,7 +99,7 @@ nav>ul{
     justify-content:space-around;
 }
 .feature{
-    width:100px;
+    width:200px;
     height:auto;
     float:right;
 }
@@ -195,5 +195,10 @@ h3>a:link{
         padding: 0 20px;
         max-width: 980px;
         margin-left: -20px;
+    }
+    .feature{
+        width:100px;
+        height:auto;
+        float:right;
     }
 }
