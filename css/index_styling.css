@@ -171,16 +171,14 @@ h3>a:link{
     }
     .bodyList{
         background-color:#233740;
-        margin-right: 50px;
+        margin-right: 40px;
+        margin-left:40px;
         padding-bottom: 10px;
         padding-top: 10px;
+        text-align:center;
     }
     img{
         width:100px;
         height:auto;
-    }
-    .bodyList{
-        text-align: center;
-        margin: 10% 10% 10% 10%
     }
 }
