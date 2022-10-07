@@ -110,7 +110,7 @@ nav>ul{
     margin:0 auto;
     padding: 0 20px;
     max-width: 980px;
-    margin-left: -15px;
+    margin-left: -20px;
 }
 h3>a:link{
     text-decoration: underline;
@@ -151,6 +151,9 @@ h3>a:link{
 }
 .giraffeFeature{
     text-align: center;
+}
+.leftContent2{
+    vertical-align:middle;
 }
 
 
