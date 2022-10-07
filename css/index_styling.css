@@ -172,4 +172,8 @@ h3>a:link{
         padding-bottom: 10px;
         padding-top: 10px;
     }
+    img{
+        width:100px;
+        height:auto;
+    }
 }
