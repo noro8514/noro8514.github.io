@@ -111,7 +111,6 @@ nav>ul{
     padding: 0 20px;
     max-width: 980px;
     margin-left: -20px;
-    margin-right: -20px;
 }
 h3>a:link{
     text-decoration: underline;
@@ -156,6 +155,9 @@ h3>a:link{
 .leftContent2{
     vertical-align:middle;
 }
+.rightContent{
+    text-align: right;
+}
 
 
 @media only screen and (max-width: 600px){
@@ -184,5 +186,14 @@ h3>a:link{
     img{
         width:100px;
         height:auto;
+    }
+    .grid{
+        display:grid;
+        grid-template-columns: 3fr 1fr;
+        gap:20px;
+        margin:0 auto;
+        padding: 0 20px;
+        max-width: 980px;
+        margin-left: -20px;
     }
 }
