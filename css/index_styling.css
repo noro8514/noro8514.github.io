@@ -51,7 +51,7 @@ p{
     font-size:14pt;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-img{
+img:not(.full-img,.displayed-img){
     width:150px;
     height:auto;
 }
@@ -80,10 +80,6 @@ img{
 }
 .listFont{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-img{
-    width:200px;
-    height:auto;
 }
 nav{
     background-color:#233740;
@@ -158,7 +154,43 @@ h3>a:link{
 .rightContent{
     text-align: right;
 }
-
+.full-img {
+    position: relative;
+    display: block;
+    width: 640px;
+    height: 480px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 640px;
+    height: 480px;
+    background-color: rgba(0,0,0,0);
+  }
+  
+  button {
+    border: 0;
+    background: rgba(150,150,150,0.6);
+    text-shadow: 1px 1px 1px white;
+    border: 1px solid #999;
+    position: absolute;
+    cursor: pointer;
+    top: 2px;
+    left: 2px;
+  }
+  
+  .thumb-bar img {
+    display: block;
+    width: 20%;
+    float: left;
+    cursor: pointer;
+  }
+  .assignment9{
+    width: 640px;
+    margin: 0 auto;
+  }
 
 @media only screen and (max-width: 600px){
     h1{
