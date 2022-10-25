@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>JSON: Task 1</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+
+    <section class="preview">
+
+
+
+    </section>
+
+  </body>
+  <script>
+    const section = document.querySelector('section');
+
+    let para1 = document.createElement('p');
+    let para2 = document.createElement('p');
+    let motherInfo = 'The mother cats are called ';
+    let kittenInfo;
+    const requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/tasks/json/sample.json';
+
+    fetch(requestURL)
+    .then(response => response.text())
+    .then(text => displayCatInfo(text))
+
+    function displayCatInfo(catString) {
+      let total = 0;
+      let male = 0;
+
+      let tryThis = JSON.parse(catString);
+      // Add your code here
+        for(let i = 0; i < tryThis.length; i++){
+            if(i === 0){
+                motherInfo = motherInfo + tryThis[i]['name'];
+            }
+            else if (i === 2){
+                motherInfo = motherInfo + ", and " + tryThis[i]['name'];
+            }
+            else{
+                motherInfo = motherInfo + ", " + tryThis[i]['name'];
+            }
+
+            for(let j = 0; j < tryThis[i]['kittens'].length; j++){
+                total = total + 1;
+                if(tryThis[i]['kittens'][j]['gender'] === "m"){
+                    male = male + 1;
+                }
+
+            }
+            
+        }
+
+        kittenInfo = "The total number of kittens is " + total + ", The total number of males is " + male + ". The total number of females is " + (total - male) + "."
+      // Don't edit the code below here!
+
+      para1.textContent = motherInfo;
+      para2.textContent = kittenInfo;
+    }
+
+    section.appendChild(para1);
+    section.appendChild(para2);
+  </script>
+
+</html>
