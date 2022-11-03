@@ -194,6 +194,20 @@ h3>a:link{
     width: 640px;
     margin: 0 auto;
   }
+  header{
+    text-align: center;
+  }
+  .new-quote{
+    border: 20px;
+    padding: 20px;
+  }
+  .button11{
+    background: rgba(150,150,150,0.6);
+    margin: 20px;
+    text-shadow: 1px 1px 1px white;
+    cursor: pointer;
+    position:relative;
+  }
 
 @media only screen and (max-width: 600px){
     h1{
