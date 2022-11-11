@@ -1,16 +1,23 @@
 const button = document.querySelector('.button');
-const output = document.querySelector('.output');
-let phone_content = 0;
+let test_count = 10;
 
 button.addEventListener('click', updateOutput);
 
-phone_content = setInterval(setNum(output),1000);
+setNum();
+countdown(test_count);
+
+setInterval(setNum,10000);
+
 
 function updateOutput() {
-    alert(phone_content);
+    alert("Thats not your number, you cheater. Begone");
+    window.close();
 }
 
-function setNum(output){
+
+
+function setNum(){
+const output = document.querySelector('.output');
 
 let num1 = Math.floor(Math.random() * 10);
 let num2 = Math.floor(Math.random() * 10);
@@ -25,6 +32,30 @@ let num10 = Math.floor(Math.random() * 10);
 
 let phone_content = ""+num1+num2+num3+num4+num5+num6+num7+num8+num9+num10;
 
-console.log(phone_content);
 output.textContent = phone_content;
+}
+
+
+
+function countdown(substitute){
+    let count = document.querySelector('.countdown');
+
+    count.textContent = substitute;
+
+    substitute = reduce(substitute);
+
+    console.log(substitute);
+
+    setTimeout(() => {countdown(substitute)}, 1000);
+}
+
+
+
+function reduce(num){
+    if(num === 1){
+        return 10;
+    }
+    else{
+    return num-1;
+    }
 }

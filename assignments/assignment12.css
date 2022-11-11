@@ -1,3 +1,12 @@
 *{
     text-align: center;
 }
+
+.output{
+    font-size: larger;
+    font-weight: 200;
+}
+
+body{
+    background-color: darkgray;
+}
