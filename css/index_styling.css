@@ -233,7 +233,7 @@ h3>a:link{
         color:#80A2AB;
     }
     a:link, a:visited{
-        color:#4D5E66;
+        color:#CFE569;
     }
     .bodyList{
         background-color:#233740;
@@ -264,4 +264,8 @@ h3>a:link{
         float:none;
         padding: 0px 20px 0px 20px;
     }
+    .assignment9{
+        width: 550px;
+        margin: 0 auto;
+      }
 }
