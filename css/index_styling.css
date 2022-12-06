@@ -221,6 +221,7 @@ h3>a:link{
 @media only screen and (max-width: 600px){
     h1{
         text-align: center;
+        color:#233740;
     }
     h2{
         color:#4D5E66;
@@ -231,7 +232,7 @@ h3>a:link{
     p{
         color:#80A2AB;
     }
-    h3>a:link, h3>a:visited{
+    a:link, a:visited{
         color:#4D5E66;
     }
     .bodyList{
