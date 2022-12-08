@@ -8,5 +8,43 @@ body{
 }
 
 html{
-    height:100%;
+    height:90%;
+}
+nav{
+    background-color:#233740;
+    padding: 0.1em;
+    position:-webkit-sticky;
+    position:sticky;
+    top:0;
+    margin:-10px;
+    display:flex;
+}
+nav>ul{
+    align-items:center;
+    justify-content:space-around;
+    padding: 10px;
+    overflow: hidden;
+}
+nav>ul>li{
+    float:left;
+    padding: 0px 20px 0px 20px;
+}
+nav>ul>li:hover{
+    background-color: #111;
+}
+a:link{
+    color:#B2DDDA;
+    text-decoration: none;
+}
+a:hover, a:visited{
+    color:#CFE569;
+}
+ul, ol{
+    color:#B2DDDA;
+    font-size: 14pt;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style: none;
+}
+body{
+    background-color: rgb(117, 115, 115);
 }

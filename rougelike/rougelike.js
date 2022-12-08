@@ -2,7 +2,7 @@ const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');
 
 const width = canvas.width = window.innerWidth;
-const height = canvas.height = window.innerHeight;
+const height = canvas.height = window.innerHeight - 50;
 
 document.addEventListener("keydown",keyCheck,false);
 document.addEventListener("keydown",keyCheckProjectile,false);
@@ -32,23 +32,32 @@ class Player {
 
       update(Xvel,Yvel) {
         if ((this.x + this.size) >= width) {
-          this.velX = -(Xvel);
+          this.x -= 10;
+          this.x += this.velX;
+          this.y += Yvel;
         }
       
-        if ((this.x - this.size) <= 0) {
-          this.velX = -(Xvel);
+        else if ((this.x - this.size) <= 0) {
+          this.x += 10;
+          this.x += this.velX;
+          this.y += Yvel;
         }
       
         if ((this.y + this.size) >= height) {
-          this.velY = -(Yvel);
+          this.y -= 5;
+          this.x += Xvel;
+        this.y += this.velY;
+        }
+        else if ((this.y - this.size) <= 0) {
+          this.y += 5;
+          this.x += Xvel;
+        this.y += this.velY;
+        }
+        else{
+            this.x += Xvel;
+            this.y += Yvel;
         }
       
-        if ((this.y - this.size) <= 0) {
-          this.velY = -(Yvel);
-        }
-      
-        this.x += Xvel;
-        this.y += Yvel;
       }
 
       collisionDetect() {
@@ -131,8 +140,8 @@ class Player {
                 const distance2 = Math.sqrt(dx2 * dx2 + dy2 * dy2);
                     if (distance2 < this.size + projectileArray[i].size) {
                         this.color = 'rgba(0,0,0,0)';
-                        this.x = 0;
-                        this.y = 0;
+                        this.x = -30;
+                        this.y = -30;
                         this.velX = 0;
                         this.velY = 0;
                         this.deathCheck = true;
