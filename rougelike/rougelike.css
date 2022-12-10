@@ -69,7 +69,7 @@ h1 {
   .play{
     position:absolute;
     top:60%;
-    left:50%;
+    left:24%;
     color:yellow;
     text-decoration: solid;
     text-shadow: 0 0 1px white;
@@ -83,7 +83,16 @@ h1 {
   .disclaimer{
     position:absolute;
     top:40%;
-    left:35%;
+    left:24%;
     color: transparent;
     text-shadow: 0 0 1px white;
+  }
+  @media only screen and (max-width: 600px){
+    nav>ul>li{
+        float:none;
+        padding: 0px 20px 0px 20px;
+    }
+    h1{
+        top:230px;
+    }
   }
