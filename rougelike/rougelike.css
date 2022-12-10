@@ -48,3 +48,42 @@ ul, ol{
 body{
     background-color: rgb(117, 115, 115);
 }
+h1 {
+    font-size: 2rem;
+    letter-spacing: -1px;
+    position: absolute;
+    margin: 0;
+    top: 80px;
+    left: 5px;
+  
+    color: transparent;
+    text-shadow: 0 0 1px white;
+  }
+  .instructions{
+    position:absolute;
+    top:50%;
+    left:24%;
+    color: transparent;
+    text-shadow: 0 0 1px white;
+  }
+  .play{
+    position:absolute;
+    top:60%;
+    left:50%;
+    color:yellow;
+    text-decoration: solid;
+    text-shadow: 0 0 1px white;
+  }
+  .play:hover{
+    cursor:pointer;
+  }
+  .play, .instructions{
+    text-align: center;
+  }
+  .disclaimer{
+    position:absolute;
+    top:40%;
+    left:35%;
+    color: transparent;
+    text-shadow: 0 0 1px white;
+  }
